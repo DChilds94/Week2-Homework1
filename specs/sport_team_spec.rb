@@ -20,7 +20,7 @@ def test_get_manager
 end
 
 def test_set_manager
-  @sport_team.set_manager("Childs")
+  @sport_team.manager = "Childs"
   assert_equal("Childs", @sport_team.manager)
 end
 

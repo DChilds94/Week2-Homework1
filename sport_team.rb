@@ -25,9 +25,18 @@ attr_accessor :players, :manager
 # def set_manager(manager)
 #   @manager = manager
 # end
+#
+# def check_result(result)
+#   if check_result == "wins"
+#     return 3
+#   end
+# end
 
-def add_points(three_points)
-  @points + three_points
+def won_or_lost(result)
+  if result == "win"
+  return @points + 3
+
+end
 end
 
 end

@@ -4,11 +4,11 @@ require_relative("../sport_team.rb")
 class TestSportTeam < MiniTest::Test
 
 def setup()
-  @sport_team = SportTeam.new("Spurs", ["Kane", "Deli", "Rose"], "Poch", 0)
+  @sport_team = SportTeam.new("North Korea", ["Kane", "Deli", "Rose"], "Poch", 0)
 end
 
 def test_name
-  assert_equal("Spurs", @sport_team.name)
+  assert_equal("North Korea", @sport_team.name)
 end
 #
 def test_get_players
@@ -28,12 +28,18 @@ end
 #   @sport_team.
 #   assert_equal(["Kane", "Deli", "Rose", "Dier"], @sport_team.players)
 # end
-# #this has passed however, I do not think I have passed this correctly. I think I have changed the players to Dier
+#this has passed however, I do not think I have passed this correctly. I think I have changed the players to Dier
 
-def test_add_points__add_three_points
-  @sport_team.add_points(3)
-  assert_equal(3, @sport_team.add_points(3))
-  end
-#I do not know why this passes
+# def test_check_result_team_wins
+#  assert_equal(3, @sport_team.check_result(win))
+# end
+
+def test_won_or_lost
+  @sport_team.won_or_lost("win")
+  assert_equal(3, @sport_team.won_or_lost("win"))
+end
+
+#@
+
 
 end

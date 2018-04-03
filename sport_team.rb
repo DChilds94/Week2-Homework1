@@ -39,4 +39,8 @@ def won_or_lost(result)
 end
 end
 
+def add_player(get_players)
+  get_
+end
+
 end

@@ -38,8 +38,4 @@ def test_won_or_lost
   @sport_team.won_or_lost("win")
   assert_equal(3, @sport_team.won_or_lost("win"))
 end
-
-#@
-
-
-end
+#This took all of 4 hours to complete. I got assistace from 3 people and still don't know how to create this test.
